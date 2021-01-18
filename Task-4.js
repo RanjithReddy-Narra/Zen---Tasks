@@ -30,7 +30,7 @@ request.onload = function () {
     let totalPopulation = data.reduce((total,a) => total+a.population,0);
     console.log(totalPopulation);
 
-    //country which use Currency as USD //
+    //country which use Currency Code as USD //
 
     let currencryDollars = data.filter(x => x.currencies[0].code === 'USD');
     console.log(currencryDollars);
